@@ -7,3 +7,4 @@
    </script>
 </svg>
 <video src=1 href=1 onerror="javascript:alert(1)"></video>
+<svg onResize svg onResize="javascript:javascript:alert(1)"></svg onResize>
