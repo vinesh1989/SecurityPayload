@@ -6,3 +6,4 @@
       alert(document.domain);
    </script>
 </svg>
+<video src=1 href=1 onerror="javascript:alert(1)"></video>
