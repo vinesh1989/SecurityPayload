@@ -1,0 +1,6 @@
+http.html:"xoxb-"
+http.favicon.hash:81586312 //Find all jenkins server
+http.title:"Grafana"
+vuln:CVE-2014-0160
+vuln:ms17-010 //Search all machines vulnerable to 'eternal blue'
+os:"Windows 10 Home 19041"
